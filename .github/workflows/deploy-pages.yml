@@ -32,6 +32,8 @@ jobs:
           mkdir -p _site
           cp index.html _site/index.html
           cp -R assets _site/assets
+          cp robots.txt _site/robots.txt
+          cp sitemap.xml _site/sitemap.xml
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
